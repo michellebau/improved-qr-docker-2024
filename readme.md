@@ -12,10 +12,11 @@ the target website. You must make your program generate a QR code that takes som
 
 1. Add the QR code image that links to your own GitHub homepage that you generate to the readme.md file, so that it appears below.
 
-PUT YOUR QR CODE IMAGE
+![QR Code](/qr_codes/QRCode_20240329215825.png)
+
 
 2.  Add an image of viewing the log of successfully creating the QR code below.
- PUT YOUR LOG IMAGE HERE
+![Screenshot](/screenshot.png)
 ## Lesson Video
 
 1.  [Scaling and Backend Software Engineering](https://youtu.be/v3LxCmYQVS4)
@@ -81,7 +82,7 @@ A comprehensive command that configures the QR code settings and mounts volumes 
 
 ## Setting the arg for the url from the terminal
 ```sh
-docker run -v .:/app qrcode --url htt/www.nobdoy.com
+docker run --rm -v ${PWD}:/app my-qr-app --url https://github.com/yourusername
 ```
 This is how you would set the url for the qr code
 ### Basic Docker Commands Explained
